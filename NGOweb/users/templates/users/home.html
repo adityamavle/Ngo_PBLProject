@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO SEARCH ENGINE </title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'users/style.css'%}">
+    
+</head>
+<body>
+    <h1>NGO SEARCH ENGINE</h1>
+    <header>
+        <section>
+            <nav>
+                <ul style="list-style-type: none; margin: 0; padding: 0;">
+                    <li><a>Home</a></li>
+                    <li><a>Directories</a></li>
+                    <li><a>Major NGOs</a></li>
+                    <li><a>Help</a></li>
+                    <li><a href="{% url 'about' %}">ABOUT US</a></li>
+                    <li style="float:right"><a href="{% url 'signup' %}" class="active">Login / Signup</a></li>
+                </ul>
+            </nav>
+            
+            
+        </section>
+        <section>
+            {% load static %}
+            <img src="{% static 'users/ngoweblogo.jpg' %}" alt="" sizes="100%" style="margin-left: auto; margin-right: auto; display:block; width:40%;">
+        </section>
+        
+    </header>
+
+
+    
+</body>
+</html>
